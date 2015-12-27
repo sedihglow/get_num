@@ -25,7 +25,11 @@
 #include <inttypes.h>
 
 /* ERROR HANDLE NOTE: If using the GN_NOEXIT_ flag, error is checked when
-   function returns a 0 AND arg != '0' */
+   function returns a 0 AND arg != '0'.
+
+   errno is also set for each function if GN_NOEXIT_ occures.
+
+   Error messages will appear in stderr */
 
                     /* public prototypes */
 
